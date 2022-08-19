@@ -1,0 +1,14 @@
+[package]
+name = "detroit_muscle"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at:
+#   https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# TODO - will need to make the connection features more dynamic
+diesel = { version = "1.4.4", features = ["postgres", "r2d2"] }
+r2d2 = "0.8"
